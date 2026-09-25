@@ -17,6 +17,9 @@ async function run(prompt) {
     generation_config: {
       temperature: 1,
     },
+
+    // stream: true,
+
     tools: [
       {
         type: "google_search",

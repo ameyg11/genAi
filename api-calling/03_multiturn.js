@@ -38,3 +38,27 @@ This is extremely important to understand before learning agents.
  */
 
 
+import "dotenv/config";
+
+import {GoogleGenAI} from "@google/genai";
+
+const ai = new GoogleGenAI({ 
+     apiKey: process.env.GOOGLE_API_KEY,  
+});
+
+async function run(prompt) {
+     const interaction1 = await ai.interactions.create({
+          model: "gemini-3.5-flash",
+          input: prompt,
+     });
+     console.log("Response 1:", interaction1.output_text);
+
+     const interaction2 = await ai.interactions.create({
+          model: "gemini-3.5-flash",
+          input: "What is my name?",
+          previous_interaction_id: interaction1.id,
+     });
+     console.log("Response 2:", interaction2.output_text);
+}
+
+await run("Hey my name is Amey!")
