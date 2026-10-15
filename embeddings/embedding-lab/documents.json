@@ -1,0 +1,62 @@
+[
+  {
+    "id": "password-reset",
+    "title": "Reset your password",
+    "text": "Users can reset a forgotten password from the account recovery page."
+  },
+  {
+    "id": "account-recovery",
+    "title": "Recover account access",
+    "text": "If you cannot sign in because you forgot your login credentials, follow the account recovery process."
+  },
+  {
+    "id": "two-factor",
+    "title": "Two-factor authentication",
+    "text": "Troubleshoot verification codes and regain access when two-factor authentication fails."
+  },
+  {
+    "id": "account-security",
+    "title": "Account security",
+    "text": "Protect your account by changing your password and reviewing recent sign-in activity."
+  },
+  {
+    "id": "email-change",
+    "title": "Change account email",
+    "text": "Update the email address associated with your profile from account settings."
+  },
+  {
+    "id": "order-cancel",
+    "title": "Cancel an order",
+    "text": "Orders can be cancelled within 30 minutes of purchase if they have not been processed."
+  },
+  {
+    "id": "shipping",
+    "title": "Track a shipment",
+    "text": "View delivery progress and estimated arrival dates on the order tracking page."
+  },
+  {
+    "id": "refund",
+    "title": "Refund policy",
+    "text": "Eligible returned purchases are refunded after the returned item has been inspected."
+  },
+  {
+    "id": "storage",
+    "title": "Cloud storage plans",
+    "text": "Premium members receive additional cloud storage for their uploaded files."
+  },
+  {
+    "id": "billing",
+    "title": "Billing problems",
+    "text": "Check payment history and resolve failed charges from your billing settings."
+  },
+  {
+    "id": "pasta",
+    "title": "Cooking pasta",
+    "text": "Boil salted water, add pasta, and cook until it reaches the desired texture."
+  },
+  {
+    "id": "jobs",
+    "title": "Apply for developer jobs",
+    "text": "Find software engineering openings and submit your resume to recruiting teams."
+  }
+]
