@@ -112,10 +112,3 @@ Two indexing concepts worth knowing
 - HNSW: Organizes vectors in a multilayer graph to navigate toward nearby vectors. It is often chosen for a strong speed/recall trade-off, at the cost of memory and index-building work.
 - IVFFlat: Organizes vectors into clusters/lists and searches selected portions rather than the entire collection. It has different build-time and recall trade-offs.
 These are implementation concepts to understand later, not algorithms you need to reproduce now. pgvector supports both index types and documents their respective trade-offs. 
-
-GitHub
-+1
-
-
-
-For your 20–50 documents, don't add HNSW yet. An index would add complexity with little benefit at this size.
