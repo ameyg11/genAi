@@ -9,7 +9,7 @@ const ai = new GoogleGenAI({
 
 async function run() {
   const chat = ai.chats.create({
-    model: "gemini-3.5-flash",
+    model: "gemini-3.6-flash",
 
     config: {
       systemInstruction:
@@ -23,6 +23,10 @@ async function run() {
   });
 
   console.log("AI 1:", response1.text);
+
+  await setTimeout(() => {
+
+  }, 3000);
 
   const response2 = await chat.sendMessage({
     message: "What is my name?",
