@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Transformers.js - In-Browser Object Detection</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>In-Browser Object Detection</h1>
+        <p class="subtitle">Powered by Transformers.js & YOLOS-tiny (WebAssembly / ONNX)</p>
+
+        <div class="controls">
+            <button id="detect-objects" disabled>Detect Objects</button>
+            <label class="file-upload-btn" for="image-upload">Upload Image</label>
+            <input type="file" id="image-upload" accept="image/*" style="display: none;" />
+
+            <div class="threshold-control">
+                <label for="threshold-slider">Confidence Threshold: <span id="threshold-val">95%</span></label>
+                <input type="range" id="threshold-slider" min="10" max="100" value="95" step="5" />
+            </div>
+        </div>
+
+        <p id="status">Initializing Transformers.js...</p>
+
+        <div id="image-container">
+            <img id="image" src="test_img.jpg" alt="Input Image" crossorigin="anonymous" />
+        </div>
+    </main>
+
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>
