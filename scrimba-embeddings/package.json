@@ -1,0 +1,20 @@
+{
+  "name": "scrimba-embeddings",
+  "version": "1.0.0",
+  "description": "Scrimba AI Engineer Path - Vector Embeddings & Supabase pgvector",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "store": "node store-embeddings.js",
+    "search": "node search-embeddings.js",
+    "chunk": "node chunking.js",
+    "challenge": "node challenge-movies.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.24.0",
+    "@langchain/textsplitters": "^0.1.0",
+    "@supabase/supabase-js": "^2.49.1",
+    "dotenv": "^16.4.7"
+  }
+}
